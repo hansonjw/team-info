@@ -1,0 +1,28 @@
+{
+  "name": "team-info",
+  "version": "1.0.0",
+  "description": "Produces a static website based on user inputs for team member information",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hansonjw/team-info.git"
+  },
+  "author": "Justin Hanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hansonjw/team-info/issues"
+  },
+  "homepage": "https://github.com/hansonjw/team-info#readme"
+}
