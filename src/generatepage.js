@@ -2,32 +2,34 @@
   return `
     <section class="my-3" id="portfolio">
       <div class="flex-row justify-space-between">
-        ${teamArray
-          .map((teamMember) => {
+        ${teamArray.map((teamMember) => {
             let role = teamMember.getRole();
             if (role == "Manager"){
               otherItem = "Office";
               otherContent = teamMember.office;
             }else if(role == "Engineer"){
               otherItem = "Github";
-              otherContent = teamMember.github;
+              otherContent = "<a href='https://github.com/" + teamMember.github + "'>" + teamMember.github + "/a>";
+
             }else{
               otherItem = "School";
               otherContent = teamMember.school;
             }
             
+            let emailTag = "<a href = 'mailto: " + teamMember.email + "'>" + teamMember.email + "</a>"
+              
             return `
             <div class="col-12 mb-2 bg-dark text-light p-3">
               <h2 class="portfolio-item-title text-light">${teamMember.name}</h2>
               <h3 class="portfolio-item-title text-light">${role}</h3>
               <h5 class="portfolio-languages">
-                ${"ID : " + teamMember.id}
+                ID : ${teamMember.id}
               </h5>
-              <p>${"email : "+ teamMember.email}</p>
-              <p>${otherItem + " : " + otherContent}</p>
+              <p>email : ${emailTag}</p>
+              <p>${otherItem} : ${otherContent}</p>
             </div>
           `;
-          })
+          }).join('')
         }
       </div>
     </section>
