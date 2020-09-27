@@ -1,9 +1,9 @@
 :root {
-  --primary: #c6be9d;
-  --secondary: #efe7da;
+  --primary: #9dbdc6;
+  --secondary: #daeaef;
   --tertiary: #ff3d2e;
   --light: #ffffff;
-  --dark: #322e27;
+  --dark: #272f32;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -70,14 +70,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #ffe600;
 }
 
 header {
   background-color: var(--primary);
   position: sticky;
   top: 0;
-  z-index: 9999;
 }
 
 nav {
@@ -93,13 +91,13 @@ nav a:hover {
 
 .page-title {
   text-align: center;
-  font-weight: bold; 
   width: 100%;
   margin: 0;
   font-size: 2.5rem;
 }
 
-.employee-title {
+.portfolio-languages {
+  font-size: 1rem;
   font-style: italic;
   color: var(--light);
 }
@@ -927,6 +925,10 @@ nav a:hover {
   nav {
     width: auto;
     justify-content: flex-end;
+  }
+
+  .page-title {
+    width: auto;
   }
 
   .col-lg-1 {
