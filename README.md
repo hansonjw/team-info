@@ -8,11 +8,11 @@
   <img src="./assets/ex-output.png" alt="output website display" width="700" height="400">
 
   ## Table of Contents:
-  * <a name="Installation:">link</a>[Installation Instructions](#Installation:)
-  * <a name="How-To:">link</a>[How to use This Application:](#How-To:)
-  * <a name="Contribute:">link</a>[How to Contibute:](#Contibute:)
-  * <a name="Lixense:">link</a>[License Information:](#License:)
-  * <a name="Questions:">link</a>[Questions:](#Questions:)
+  * <a name="Installation:"></a>[Installation Instructions](#Installation:)
+  * <a name="How-To:"></a>[How to use This Application](#How-To:)
+  * <a name="Contribute:"></a>[How to Contibute](#Contibute:)
+  * <a name="Lixense:"></a>[License Information](#License:)
+  * <a name="Questions:"></a>[Questions](#Questions:)
   
   
   ## Installation:
@@ -21,6 +21,7 @@
   
   ## How-To:  
   Launch the index.js file from the command line when in the correct directory.  Then enter data based on the prompts in the command line.  When finished the application will out put two files: 1-index.html, 2-style.css to the 'dist' subdirectory.  To view the output launch the index.html file with any browser.
+  https://drive.google.com/file/d/181-_9Z6Bn9BuFXLsFoShf2MKqIQgIQ9F/view?usp=sharing
 
   
   ## Contribute:  
