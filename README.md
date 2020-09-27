@@ -8,11 +8,11 @@
   <img src="./assets/ex-output.png" alt="output website display" width="700" height="400">
 
   ## Table of Contents:
-  * <a name="Installation:">[Installation Instructions](#Installation:)</a>
-  * <a name="How-To:">[How to use This Application:](#How-To:)</a>
-  * <a name="Contribute:">[How to Contibute:](#Contibute:)</a>
-  * <a name="Lixense:">[License Information:](#License:)</a>
-  * <a name="Questions:">[Questions:](#Questions:)</a>
+  * <a name="Installation:"></a>[Installation Instructions](#Installation:)
+  * <a name="How-To:"></a>[How to use This Application:](#How-To:)
+  * <a name="Contribute:"></a>[How to Contibute:](#Contibute:)
+  * <a name="Lixense:"></a>[License Information:](#License:)
+  * <a name="Questions:"></a>[Questions:](#Questions:)
   
   
   ## Installation:
