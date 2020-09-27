@@ -1,17 +1,30 @@
  const generateTeam = teamArray => {
   return `
     <section class="my-3" id="portfolio">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
       <div class="flex-row justify-space-between">
         ${teamArray
-          .map(({ name, id, email }) => {
+          .map((teamMember) => {
+            let role = teamMember.getRole();
+            if (role == "Manager"){
+              otherItem = "Office";
+              otherContent = teamMember.office;
+            }else if(role == "Engineer"){
+              otherItem = "Github";
+              otherContent = teamMember.github;
+            }else{
+              otherItem = "School";
+              otherContent = teamMember.school;
+            }
+            
             return `
             <div class="col-12 mb-2 bg-dark text-light p-3">
-              <h3 class="portfolio-item-title text-light">${name}</h3>
+              <h2 class="portfolio-item-title text-light">${teamMember.name}</h2>
+              <h3 class="portfolio-item-title text-light">${role}</h3>
               <h5 class="portfolio-languages">
-                ${id}
+                ${"ID : " + teamMember.id}
               </h5>
-              <p>${email}</p>
+              <p>${"email : "+ teamMember.email}</p>
+              <p>${otherItem + " : " + otherContent}</p>
             </div>
           `;
           })
@@ -39,7 +52,7 @@ module.exports = teamData => {
   <body>
     <header>
       <div class="container flex-row justify-space-between align-center py-3">
-        My Team
+        <h2>My Team<h2>
       </div>
     </header>
     <main class="container my-5">
