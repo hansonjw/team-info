@@ -2,17 +2,17 @@
   No license is applicable for this application
 
   ## Description:  
-  This application solicits information from a user through terminal prompts.  The prompts ask the user about team members and the data is collected, processed, then outputted into and HTML file.  This HTML file, when launched in the browser provides a clean and organized display of team member data.
+  This application solicits information from a user through terminal prompts.  The prompts ask the user about team members and the data is collected, processed, then outputted into an HTML file.  This HTML file, when launched in the browser, provides a clean and organized display of team member data.  See images below:
 
   <img src="./assets/ex-input.png" alt="input screen" width="700" height="500">
   <img src="./assets/ex-output.png" alt="output website display" width="700" height="400">
 
   ## Table of Contents:
-  * <a name="Installation:"></a>[Installation Instructions](#Installation:)
-  * <a name="How-To:"></a>[How to use This Application:](#How-To:)
-  * <a name="Contribute:"></a>[How to Contibute:](#Contibute:)
-  * <a name="Lixense:"></a>[License Information:](#License:)
-  * <a name="Questions:"></a>[Questions:](#Questions:)
+  * <a name="Installation:">link</a>[Installation Instructions](#Installation:)
+  * <a name="How-To:">link</a>[How to use This Application:](#How-To:)
+  * <a name="Contribute:">link</a>[How to Contibute:](#Contibute:)
+  * <a name="Lixense:">link</a>[License Information:](#License:)
+  * <a name="Questions:">link</a>[Questions:](#Questions:)
   
   
   ## Installation:
