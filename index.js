@@ -9,6 +9,7 @@ const Engineer = require('./lib/Engineer.js');
 const Manager = require('./lib/Manager.js');
 const Intern = require('./lib/Intern.js');
 
+// List of basic questions for all classes
 const basicQuestions = [
     {
         type: 'input',
@@ -27,6 +28,7 @@ const basicQuestions = [
     }
 ]
 
+// additional questions depending on class type (Manager, Engineer, Intern...)
 const addlQuestions = {
     Engineer: {
         type: 'input',
@@ -48,11 +50,14 @@ const addlQuestions = {
 }
 
 // Define next employee options utilizing keys of above object
+// Define an empty array to collect all employee data that 
+// will be passed to the createFiles function
 let employeeOptions = Object.keys(addlQuestions);
 employeeOptions.pop();
 employeeOptions.push('No more employees to enter...');
 let allEmployees = [];
 
+// array of question objects to get the next kind of employee
 const nextTypeChoices = [
     {
     type: 'list',
@@ -62,9 +67,10 @@ const nextTypeChoices = [
     }
 ]
 
+// function that takes array of input and creates files and HTML
+// ...then copies to the 'dist' directory
 function createFiles (teamArray) {
     let pageHTML = generatePage(teamArray);
-    console.log(pageHTML);
     writeFile(pageHTML)
         .then(writeFileResponse => {
             console.log(writeFileResponse);
@@ -78,6 +84,7 @@ function createFiles (teamArray) {
         });
 }
 
+// Main function that solicits input from user on command line
 function getData(employeeType){
     
     if (employeeType == 'Manager'){
@@ -89,7 +96,6 @@ function getData(employeeType){
     }else{
         console.log("Thanks for providing all this data...we'll now create your page...");
         // call function to create page...
-        console.log(allEmployees);
         createFiles(allEmployees);
         return;
     }
@@ -113,11 +119,13 @@ function getData(employeeType){
     });
 }
 
+// function that takes a single employee data set and adds to array of all employee data
+// ...then call getData function to get next set of data
 function buildArray (employeeToAdd, nextType){
     allEmployees.push(employeeToAdd);
     getData(nextType);
 }
 
-
+// start of the program activiation...start getData with the Manager
 console.log("Let's collect your team data. First we'll start with the Manager...");
 getData('Manager');
